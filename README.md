@@ -11,18 +11,33 @@ Omni project
 - nodemon
 
 ## backend
+
 - setup
   - npm -y init
   - npm install express
   - node index.js
+
 - npm install nodemon -D
   - script { "start": "nodemon index.js" }
   - npm start
-- npm install knex
-  - query builder
-- npm install sqlite3
-  - driver do sqlite pra fazer conexao
-- npx knex init
+
+- sqlite and knex
+  - npm install knex
+    - query builder
+  - npm install sqlite3
+    - driver do sqlite pra fazer conexao
+  - npx knex init
+
+### migration
+
+- npx knex migrate:make migration_name
+  - cria migration
+- npx knex migrate:latest
+  - executa migration
+- npx knex migrate:rollback
+  - executa down() do migration
+- npx knex migrate:status
+  - lista migrations executadas
 
 ## frontend web
 - npx create-react-app frontend
