@@ -1,6 +1,7 @@
 const express = require('express');
 const routes = express.Router();
-const ongcontroller = require('./controllers/ong.controller');
+const ongController = require('./controllers/ong.controller');
+const incidentController = require('./controllers/incident.controller');
 
 routes.post('/test', (request, response) => {
     // const params = request.query;
@@ -12,8 +13,11 @@ routes.post('/test', (request, response) => {
     return response.json({ a: "a" });
 });
 
-routes.get('/ongs', ongcontroller.get);
+routes.get('/ongs', ongController.get);
 
-routes.post('/ongs', ongcontroller.create);
+routes.post('/ongs', ongController.create);
+
+routes.post('/incidents', incidentController.create);
+routes.get('/incidents', incidentController.get);
 
 module.exports = routes;
