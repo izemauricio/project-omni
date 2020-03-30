@@ -9,6 +9,7 @@ Omni project
 - sqlite3 driver
 - express
 - nodemon
+- CORS
 
 ## backend
 
@@ -27,6 +28,8 @@ Omni project
   - npm install sqlite3
     - driver do sqlite pra fazer conexao
   - npx knex init
+
+- npm install cors
 
 ### migration
 

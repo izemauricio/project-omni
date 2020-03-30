@@ -12,7 +12,16 @@ module.exports = {
         return response.json({ id });
     },
     async get(request, response) {
-        const ongs = await connection('incidents').select('*');
+        const { page = 1 } = request.query;
+        const ongs = await connection('incidents')
+            .join('ongs', 'ong_id', '=', 'incidents.ong_id')
+            .limit(5)
+            .offset((page - 1) * 5)
+            .select('incidents.*','ongs.name','ongs.email','ongs.whatsapp', 'ongs.city', 'ongs.uf'); // pra nao sobrepor o id do incident com id da ong
+
+        //const count = await connection('incidents').count()[0];
+        const [count] = await connection('incidents').count();
+        response.header('X-Total-Count', count['count(*)']); // propriedade count(*) do objeto
         return response.json(ongs);
     },
     async delete(request, response) {
