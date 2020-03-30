@@ -57,7 +57,8 @@ Omni project
 - SQL
   - MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
   - Query Builder
-    - knex()
+    - knex
     - table().select().where()
+    - migrations log
 - NoSQL
   - MongoDB, CouchDB
