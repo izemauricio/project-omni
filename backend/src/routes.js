@@ -14,10 +14,10 @@ routes.post('/test', (request, response) => {
 });
 
 routes.get('/ongs', ongController.get);
-
 routes.post('/ongs', ongController.create);
 
 routes.post('/incidents', incidentController.create);
 routes.get('/incidents', incidentController.get);
+routes.delete('/incidents/:id', incidentController.delete);
 
 module.exports = routes;
