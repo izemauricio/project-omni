@@ -1,8 +1,7 @@
 # project-omni
 Omni project
 
-## tools
-- notion.so
+## stack
 - knex database wrapper
 - insomnia
 - react chrome debugger
@@ -10,6 +9,26 @@ Omni project
 - express
 - nodemon
 - CORS
+- notion.so
+- axios
+- Intl format
+
+## react
+- import de fonts por css
+- props.child
+- box-sizing: border-box
+- desconstrucao de array [] e objeto {}
+- material icons, feather icons, fontawesome icons
+- Link instead of a to do not reload
+- useEffect
+- useHistory, Link
+- arrow function inside jsx to send a function without calling it
+
+## web
+- npx create-react-app frontend
+- npm start
+- npm install react-icons
+- npm install axios
 
 ## backend
 
@@ -42,9 +61,7 @@ Omni project
 - npx knex migrate:status
   - lista migrations executadas
 
-## frontend web
-- npx create-react-app frontend
-- npm start
+
 
 ## notes
 
