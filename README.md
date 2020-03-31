@@ -24,6 +24,14 @@ Omni project
 - useHistory, Link
 - arrow function inside jsx to send a function without calling it
 
+## mobile
+- npm install -g expo-cli
+- expo init mobile
+  - blank
+- emulador, celular, expo-snack
+  - yarn start
+  - download expo app and scan qrcode
+
 ## web
 - npx create-react-app frontend
 - npm start
@@ -31,7 +39,6 @@ Omni project
 - npm install axios
 
 ## backend
-
 - setup
   - npm -y init
   - npm install express
